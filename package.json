@@ -33,7 +33,8 @@
                     "htmlua"
                 ],
                 "extensions": [
-                    ".htmlua"
+                    ".htmlua",
+                    ".htl"
                 ],
                 "configuration": "./language-configuration.json"
             }

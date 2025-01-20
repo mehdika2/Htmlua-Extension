@@ -1,12 +1,14 @@
 {
-    "iconDefinitions": {
-      "htmluaIcon": {
-        "iconPath": "./images/icon.svg"
-      }
-    },
-    "fileExtensions": {
-      "htmlua": "htmluaIcon",
-      "htl": "htmluaIcon"
+  "extends": "vs-seti",
+  "iconDefinitions": {
+    "htmlua-icon": {
+      "iconPath": "./images/icon.svg"
     }
+  },
+  "fileExtensions": {
+    "htmlua": "htmlua-icon"
+  },
+  "languageIds": {
+    "htmlua": "htmlua-icon"
   }
-  
+}
