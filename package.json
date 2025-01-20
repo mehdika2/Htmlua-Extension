@@ -18,7 +18,12 @@
         "Programming Languages",
         "Themes"
     ],
-    "keywords": ["icons", "theme", "customization", "htmlua"],
+    "keywords": [
+        "icons",
+        "theme",
+        "customization",
+        "htmlua"
+    ],
     "contributes": {
         "languages": [
             {
@@ -48,5 +53,11 @@
             }
         ]
     },
-    "main": "./src/extension.js"
+    "main": "./src/extension.js",
+    "scripts": {
+        "vscode:prepublish": "echo 'No compile step required'"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.3"
+    }
 }
