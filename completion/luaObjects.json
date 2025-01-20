@@ -1,0 +1,373 @@
+[
+    {
+        "name": "table",
+        "detail": "Lua table",
+        "units": [
+            {
+                "name": "insert",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "insert(${1:table}, ${2:position}, ${3:value})",
+                "documentation": "Inserts a value into a table at the specified position."
+            },
+            {
+                "name": "remove",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "remove(${1:table}, ${2:position})",
+                "documentation": "Removes a value from a table at the specified position."
+            },
+            {
+                "name": "concat",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "concat(${1:table}, ${2:separator}, ${3:from}, ${4:to})",
+                "documentation": "Concatenates all elements in a table into a single string."
+            },
+            {
+                "name": "sort",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "sort(${1:table})",
+                "documentation": "Sort emenets in a table"
+            },
+            {
+                "name": "create",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "create(${1:length}, ${2:defaultValue})",
+                "documentation": "Create table with specified size"
+            }
+        ]
+    },
+    {
+        "name": "math",
+        "detail": "Lua math",
+        "units": [
+            {
+                "name": "random",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "random(${1:from}, ${2:to})",
+                "documentation": "Generates a random number.\r\n    With no arguments: Returns a number between 0 and 1.\r\n    With one argument: Returns an integer between 1 and x.\r\n    With two arguments: Returns an integer between x and y."
+            },
+            {
+                "name": "abs",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "abs(${1:x})",
+                "documentation": "Returns the absolute value of a number."
+            },
+            {
+                "name": "floor",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "floor(${1:x})",
+                "documentation": "Rounds a number down to the nearest integer."
+            },
+            {
+                "name": "max",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "max(${1:x}, ${2:y})",
+                "documentation": "Returns the maximum value among the given arguments."
+            },
+            {
+                "name": "min",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "min(${1:x}, ${2:y})",
+                "documentation": "Returns the minimum value among the given arguments."
+            },
+            {
+                "name": "sqrt",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "sqrt(${1:x})",
+                "documentation": "Returns the square root of a number."
+            },
+            {
+                "name": "pi",
+                "type": 3,
+                "detail": "(constant)",
+                "documentation": "A constant representing the value of π (3.1415926535898)."
+            }
+        ]
+    },
+    {
+        "name": "string",
+        "detail": "Lua string",
+        "units": [
+            {
+                "name": "sub",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "sub(${1:string}, ${2:from}, ${3:length)",
+                "documentation": "Returns a substring from a string."
+            },
+            {
+                "name": "upper",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "upper(${1:string})",
+                "documentation": "Converts all lowercase letters in a string to uppercase."
+            },
+            {
+                "name": "lower",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "lower(${1:string})",
+                "documentation": "Converts all uppercase letters in a string to lowercase."
+            },
+            {
+                "name": "byte",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "byte(${1:string}, ${2:position})",
+                "documentation": "Returns the ASCII (byte) value of a character at a given position in a string."
+            },
+            {
+                "name": "char",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "char(...)",
+                "documentation": "Converts one or more integers (ASCII values) into characters."
+            },
+            {
+                "name": "len",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "len(${1:string})",
+                "documentation": "Returns the length of a string. (Equivalent to #string.)"
+            },
+            {
+                "name": "find",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "find(${1:string}, ${2:pattern}, ${3:startPosition})",
+                "documentation": "Searches for a pattern in a string and returns the start and end positions of the first occurrence."
+            },
+            {
+                "name": "match",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "match(${1:string}, ${2:pattern}, ${3:startPosition}))",
+                "documentation": "Searches for the first occurrence of a pattern and returns the matched substring."
+            },
+            {
+                "name": "gmatch",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "gmatch(${1:string}, ${2:pattern}, ${3:startPosition}))",
+                "documentation": "Returns an iterator function that iterates over all occurrences of a pattern in a string."
+            },
+            {
+                "name": "gsub",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "gsub(${1:string}, ${2:pattern, ${3:replacement})",
+                "documentation": "Replaces occurrences of a pattern in a string with a replacement string."
+            },
+            {
+                "name": "format",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "format(${1:string}, ...)",
+                "documentation": "Formats a string using placeholders (like printf in C)."
+            },
+            {
+                "name": "reverse",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "reverse(${1:string})",
+                "documentation": "Reverses the characters in a string."
+            },
+            {
+                "name": "rep",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "rep(${1:string}, ${2:times})",
+                "documentation": "Repeats a string a specified number of times."
+            },
+            {
+                "name": "",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "(${1:string})",
+                "documentation": ""
+            }
+        ]
+    },
+    {
+        "name": "os",
+        "detail": "Lua object",
+        "units": [
+            {
+                "name": "clock",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "clock()",
+                "documentation": "Returns the amount of CPU time used by the program (in seconds)."
+            },
+            {
+                "name": "date",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "date(${1:format})",
+                "documentation": "Formats the current date and time as a string or table."
+            },
+            {
+                "name": "difftime",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "difftime(${1:time1}, ${2:time2})",
+                "documentation": "Returns the difference (in seconds) between two time values."
+            },
+            {
+                "name": "execute",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "execute(${1:command})",
+                "documentation": "Executes a shell command."
+            },
+            {
+                "name": "getenv",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "getenv(${1:variable})",
+                "documentation": "Gets the value of an environment variable."
+            },
+            {
+                "name": "remove",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "remove(${1:filename})",
+                "documentation": "Deletes a file."
+            },
+            {
+                "name": "rename",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "rename(${1:oldname}, ${2:newname})",
+                "documentation": ""
+            },
+            {
+                "name": "setlocale",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "setlocale(${1:locale})",
+                "documentation": "Sets or gets the current locale. (default en_US)"
+            },
+            {
+                "name": "time",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "time()",
+                "documentation": "Returns the current time as a timestamp."
+            },
+            {
+                "name": "tmpname",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "tmpname()",
+                "documentation": "Creates a temporary file name."
+            }
+        ]
+    },
+    {
+        "name": "io",
+        "detail": "Lua object",
+        "units": [
+            {
+                "name": "open",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "open(${1:filename}, ${2:mode})",
+                "documentation": "Opens a file for reading, writing, or appending."
+            },
+            {
+                "name": "read",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "read(${1:mode})",
+                "documentation": "Reads input from the standard input or a file.\r\n    mode: \"n\" (number), \"l\" (line), \"a\" (all). (line \"*+{mode}\")"
+            },
+            {
+                "name": "write",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "write(${1:output})",
+                "documentation": "Writes output to the standard output."
+            },
+            {
+                "name": "flush",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "flush()",
+                "documentation": "Flushes the output buffer."
+            },
+            {
+                "name": "close",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "close(${1:file})",
+                "documentation": "Closes a file or standard output."
+            },
+            {
+                "name": "lines",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "lines(${1:filename})",
+                "documentation": "Iterates over lines in a file."
+            },
+            {
+                "name": "type",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "type(${1:file})",
+                "documentation": "Checks if a file handle is valid."
+            },
+            {
+                "name": "",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "(${1:})",
+                "documentation": ""
+            }
+        ]
+    },
+    {
+        "name": "debug",
+        "detail": "Lua object",
+        "units": [
+            {
+                "name": "traceback",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "traceback(${1:message})",
+                "documentation": "Returns a string with the call stack trace at the point where the function is called. Useful for debugging errors."
+            },
+            {
+                "name": "setlocal",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "setlocal(${1:level}, ${2:index}, ${3:value})",
+                "documentation": "Sets the value of a local variable at a specific stack level."
+            },
+            {
+                "name": "getlocal",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "getlocal(${1:level}, ${2:index})",
+                "documentation": "Gets the name and value of a local variable at a specific stack level."
+            },
+            {
+                "name": "debug",
+                "type": 1,
+                "detail": "(method)",
+                "insertText": "debug()",
+                "documentation": "Enters an interactive debug mode where you can execute Lua code step-by-step."
+            }
+        ]
+    }
+]

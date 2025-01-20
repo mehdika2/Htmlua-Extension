@@ -1,0 +1,62 @@
+[
+    {
+      "name": "print",
+      "documentation": "Prints one or more values to the console.",
+      "detail": "(function)",
+      "insertText": "print(${1:value})"
+    },
+    {
+      "name": "pairs",
+      "documentation": "Iterates over key-value pairs in a table.",
+      "detail": "(function)",
+      "insertText": "pairs(${1:table})"
+    },
+    {
+      "name": "ipairs",
+      "documentation": "Iterates over integer-indexed values in a table.",
+      "detail": "(function)",
+      "insertText": "ipairs(${1:table})"
+    },
+    {
+      "name": "assert",
+      "documentation": "Raises an error if a condition is false; otherwise returns the given values.",
+      "detail": "(function)",
+      "insertText": "assert(${1:condition}, ${2:message})"
+    },
+    {
+      "name": "type",
+      "documentation": "Returns the type of a given value as a string.",
+      "detail": "(function)",
+      "insertText": "type(${1:value})"
+    },
+    {
+      "name": "tonumber",
+      "documentation": "Converts a value to a number, if possible.",
+      "detail": "(function)",
+      "insertText": "tonumber(${1:value})"
+    },
+    {
+      "name": "tostring",
+      "documentation": "Converts a value to a string.",
+      "detail": "(function)",
+      "insertText": "tostring(${1:value})"
+    },
+    {
+      "name": "load",
+      "documentation": "Loads a Lua chunk (code) from a string or function.",
+      "detail": "(function)",
+      "insertText": "load(${1:chunk})"
+    },
+    {
+      "name": "loadfile",
+      "documentation": "Loads a Lua chunk from a file.",
+      "detail": "(function)",
+      "insertText": "loadfile(${1:filename})"
+    },
+    {
+      "name": "require",
+      "documentation": "Loads and returns a module, ensuring it is only loaded once.",
+      "detail": "(function)",
+      "insertText": "require('${1:module}')"
+    }
+  ]

@@ -1,0 +1,226 @@
+[
+    {
+        "name": "request",
+        "documentation": "Request context",
+        "units": [
+            {
+                "name": "method",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Request method name (GET,POST,PUT, ...)"
+            },
+            {
+                "name": "uri",
+                "type": 5,
+                "detail": "(get)",
+                "documentation": "Request uri contains all request url information",
+                "properties": [
+                    {
+                        "name": "AbsolutePath",
+                        "description": "Absolute path of request url"
+                    },
+                    {
+                        "name": "AbsoluteUrl",
+                        "description": "Absolute url of request url"
+                    }
+                ]
+            },
+            {
+                "name": "httpVersion",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Http version of request content"
+            },
+            {
+                "name": "headers",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Request headers"
+            },
+            {
+                "name": "cookies",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Request cookies"
+            },
+            {
+                "name": "post",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Request posted data"
+            },
+            {
+                "name": "get",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Request received data from url"
+            },
+            {
+                "name": "isMultipartRequest",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Check if request was post and sent data is multipart request"
+            },
+            {
+                "name": "content",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Request content"
+            },
+            {
+                "name": "items",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Request items set by server or modules"
+            },
+            {
+                "name": "userAddress",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Client user ip address"
+            },
+            {
+                "name": "userPort",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Client user ip port connected to server"
+            }
+        ]
+    },
+    {
+        "name": "response",
+        "documentation": "Response context",
+        "units": [
+            {
+                "name":  "status",
+                "type": 9,
+                "detail": "(get, set)",
+                "documentation": "Response status code"
+            },
+            {
+                "name":  "statusText",
+                "type": 9,
+                "detail": "(get, set)",
+                "documentation": "Response status text"
+            },
+            {
+                "name":  "httpVersion",
+                "type": 9,
+                "detail": "(get, set)",
+                "documentation": "Response http version"
+            },
+            {
+                "name":  "headers",
+                "type": 9,
+                "detail": "(get, set)",
+                "documentation": "Response headers"
+            },
+            {
+                "name":  "cookies",
+                "type": 9,
+                "detail": "(get, set)",
+                "documentation": "Response cookies"
+            }
+        ]
+    },
+    {
+        "name": "appconfig",
+        "documentation": "Application configuration",
+        "units": [
+            {
+                "name": "connectionStrings",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Dictionary of connection strings"
+            },
+            {
+                "name": "baseDirectory",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Web app base directory"
+            },
+            {
+                "name": "directoryBrowsing",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Is directory browsing enabled"
+            },
+            {
+                "name": "defaultPages",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Default pages"
+            },
+            {
+                "name": "extentionRequired",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Is extention required"
+            },
+            {
+                "name": "notExtentionInUrl",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Is required not to add htmlua extention if extention is not required"
+            },
+            {
+                "name": "frobiddenPaths",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Frobidden path and direcotries for clients"
+            },
+            {
+                "name": "errorPages",
+                "type":9,
+                "detail": "(get)",
+                "documentation": "Defined error pages"
+            }
+        ]
+    },
+    {
+        "name": "session",
+        "documentation": "Session authentication",
+        "units": [
+            {
+                "name": "isAuth",
+                "type": 9,
+                "detail": "(method)",
+                "documentation": "Returns true if client has auth cookie"
+            },
+            {
+                "name": "set",
+                "type": 1,
+                "detail": "(method)",
+                "documentation": "Sign in user",
+                "insertText": "set(${1:name}, ${2:remember})"
+            },
+            {
+                "name": "name",
+                "type": 9,
+                "detail": "(get)",
+                "documentation": "Returns signed user name if has auth cookie"
+            },
+            {
+                "name": "clear",
+                "type": 1,
+                "detail": "(method)",
+                "documentation": "Sign out user",
+                "insertText": "'clear()"
+            },
+            {
+                "name": "roleName",
+                "type": 1,
+                "detail": "(method)",
+                "documentation": "Returns role of user name",
+                "insertText": "'roleName()"
+            },
+            {
+                "name": "hasRole",
+                "type": 1,
+                "detail": "(method)",
+                "documentation": "Check if user has role",
+                "insertText": "'hasRole(${1:role})"
+            }
+        ]
+    }
+]

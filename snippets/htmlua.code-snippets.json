@@ -1,0 +1,37 @@
+{
+    "scopeName": "source.htmlua",
+    "patterns": [
+        {
+            "name": "string.quoted.double",
+            "match": "\"[^\"]*\""
+        },
+        {
+            "name": "comment.line.hash",
+            "match": "#.*"
+        },
+        {
+            "name": "constant.numeric",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "variable.other",
+            "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*"
+        },
+        {
+            "name": "meta.template.expression",
+            "match": "\\$\\{(?:[^}]|\\n)*?\\}"
+        },
+        {
+            "name": "entity.name.tag",
+            "match": "<[^>]+>"
+        },
+        {
+            "name": "comment.block.html",
+            "match": "<!--[^>]+-->"
+        }
+    ],
+    "repository": {},
+    "fileTypes": ["htmlua"],
+    "name": "Htmlua",
+    "scopeName": "source.htmlua"
+}

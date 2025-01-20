@@ -1,0 +1,92 @@
+[
+    {
+      "name": "go",
+      "documentation": "Outputs a value directly into http response content.",
+      "detail": "(method)",
+      "insertText": "go(${1:value})"
+    },
+    {
+      "name": "safe",
+      "documentation": "Encodes a value to make it safe for HTML output.",
+      "detail": "(method)",
+      "insertText": "safe(${1:value})"
+    },
+    {
+      "name": "setItem",
+      "documentation": "Stores a value in the current context.",
+      "detail": "(method)",
+      "insertText": "setItem('${1:key}', ${2:value})"
+    },
+    {
+      "name": "getItem",
+      "documentation": "Retrieves a value stored in the current context using a specified key.",
+      "detail": "(method)",
+      "insertText": "getItem('${1:key}')"
+    },
+    {
+      "name": "setTemp",
+      "documentation": "Stores a temporary value for the session.",
+      "detail": "(method)",
+      "insertText": "setTemp('${1:key}', ${2:value})"
+    },
+    {
+      "name": "getTemp",
+      "documentation": "Retrieves a temporary value stored in the session using a specified key.",
+      "detail": "(method)",
+      "insertText": "getTemp('${1:key}')"
+    },
+    {
+      "name": "setStatus",
+      "documentation": "Sets the HTTP status code and optional message for the response.",
+      "detail": "(method)",
+      "insertText": "setStatus(${1:code}, '${2:message}')"
+    },
+    {
+      "name": "getError",
+      "documentation": "Retrieves the last error that occurred on the server.",
+      "detail": "(method)",
+      "insertText": "getError()"
+    },
+    {
+      "name": "clearError",
+      "documentation": "Clears the last error that occurred on the server.",
+      "detail": "(method)",
+      "insertText": "clearError()"
+    },
+    {
+      "name": "redirect",
+      "documentation": "Redirects the user to a different URL.",
+      "detail": "(method)",
+      "insertText": "redirect('${1:url}')"
+    },
+    {
+      "name": "addHeader",
+      "documentation": "Adds a custom header to the HTTP response.",
+      "detail": "(method)",
+      "insertText": "addHeader('${1:name}', '${2:value}')"
+    },
+    {
+      "name": "setCookie",
+      "documentation": "Sets a cookie in the HTTP response.",
+      "detail": "(method)",
+      "insertText": "setCookie('${1:name}', '${2:value}')"
+    },
+    {
+      "name": "deleteCookie",
+      "documentation": "Deletes a cookie by setting its expiration date to the past.",
+      "detail": "(method)",
+      "insertText": "deleteCookie('${1:name}')"
+    },
+    {
+      "name": "create_mssql_connection",
+      "documentation": "Create System.Data.SqlClient connection",
+      "detail": "(method)",
+      "insertText": "create_mssql_connection('${1:connectionString}')"
+    },
+    {
+      "name": "create_sqlite_connection",
+      "documentation": "Create System.Data.Sqlite connection",
+      "detail": "(method)",
+      "insertText": "create_sqlite_connection('${1:connectionString}')"
+    }
+  ]
