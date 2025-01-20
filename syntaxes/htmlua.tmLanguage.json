@@ -35,16 +35,43 @@
 			"match": "\\b(request|response|appconfig|session)\\b"
 		},
 		{
-			"name": "entity.name.tag.htmlua",
-			"match": "</?\\b[\\w-]+\\b>"
-		},
-		{
-			"name": "comment.block",
-			"match": "<!--.*?-->"
+			"begin": "<!--",
+			"end": "-->",
+			"name": "comment.block.html"
 		},
 		{
 			"name": "entity.other.attribute-name.htmlua",
 			"match": "\\b[\\w-]+(?=\\s*=)"
+		},
+		
+		{
+			"match": "\\b\\d+\\b",
+			"name": "constant.numeric.html.custom"
+		},
+		
+		{
+			"match": "<\\/?(\\w+)(?=\\s|>)",
+			"captures": {
+				"0": {
+					"name": "punctuation.definition.tag.begin.html.custom"
+				},
+				"1": {
+					"name": "entity.name.tag.html"
+				}
+			}
+		},
+
+		{
+			"match": "<\/",
+			"name": "punctuation.definition.tag.begin.html.custom"
+		},
+		{
+			"match": "<",
+			"name": "punctuation.definition.tag.begin.html.custom"
+		},
+		{
+			"match": ">",
+			"name": "punctuation.definition.tag.end.html.custom"
 		}
 	],
 	"repository": {},

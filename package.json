@@ -46,7 +46,7 @@
                 "path": "./syntaxes/htmlua.tmLanguage.json"
             }
         ],
-        "iconThemes": [
+        "iconThemes_DISABLED": [
             {
                 "id": "htmlua-icons",
                 "label": "Htmlua icons",

@@ -205,7 +205,7 @@
                 "type": 1,
                 "detail": "(method)",
                 "documentation": "Sign out user",
-                "insertText": "'clear()"
+                "insertText": "clear()"
             },
             {
                 "name": "roleName",

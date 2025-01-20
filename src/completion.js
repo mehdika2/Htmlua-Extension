@@ -7,20 +7,35 @@ function complete(document, position) {
 
     // تعریف شیء سراسری
     const linePrefix = document.lineAt(position).text.substr(0, position.character).trimStart();
+
+    if (linePrefix.startsWith("$."))
+        return;
+
     if (linePrefix.endsWith('.')) {
         try {
             var objectName = linePrefix.substr(0, linePrefix.length - 1);
+            const index = objectName.indexOf("$");
+            console.log(index, objectName.length);
+            if(index > 0 && 
+                index <= objectName.length)
+                objectName = objectName.substr(objectName.indexOf("$") + 1);
+
             var object = globalObjects.find(i => i.name === objectName);
             if (object)
                 return completeObjectUnits(object);
 
             object = luaObjects.find(i => i.name === objectName);
-            if (object) 
+            if (object)
                 return completeObjectUnits(object);
+
+            return [];
         }
         catch (error) {
             console.warn(error);
         }
+    }
+    else if (linePrefix.includes(".")) {
+        return [];
     }
 
     globalObjects.forEach(globalObject => {
