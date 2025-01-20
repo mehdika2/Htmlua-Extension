@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-repository-url.git"
+    "url": "https://github.com/mehdika2/Htmlua-Extension"
   },
   "engines": {
       "vscode": "^1.96.4"
