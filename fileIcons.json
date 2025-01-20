@@ -1,0 +1,12 @@
+{
+    "iconDefinitions": {
+      "htmluaIcon": {
+        "iconPath": "./images/icon.svg"
+      }
+    },
+    "fileExtensions": {
+      "htmlua": "htmluaIcon",
+      "htl": "htmluaIcon"
+    }
+  }
+  

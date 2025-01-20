@@ -1,34 +1,51 @@
 {
-  "name": "htmlua-extension",
-  "displayName": "Htmlua Extension",
-  "description": "Syntax highlighting support for Htmlua files",
-  "version": "1.0.0",
-  "publisher": "Mahdi khalilzadeh",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mehdika2/Htmlua-Extension"
-  },
-  "engines": {
-      "vscode": "^1.96.4"
-  },
-  "categories": ["Programming Languages"],
-  "contributes": {
-      "languages": [
-          {
-              "id": "htmlua",
-              "aliases": ["Htmlua", "htmlua"],
-              "extensions": [".htmlua"],
-              "configuration": "./language-configuration.json"
-          }
-      ],
-      "grammars": [
-          {
-              "language": "htmlua",
-              "scopeName": "source.htmlua",
-              "path": "./syntaxes/htmlua.tmLanguage.json"
-          }
-      ]
-  },
-  "main": "./src/extension.js"
+    "name": "htmlua-extension",
+    "displayName": "Htmlua Extension",
+    "description": "Syntax highlighting support for Htmlua files",
+    "version": "1.0.0",
+    "publisher": "Mahdi khalilzadeh",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mehdika2/Htmlua-Extension"
+    },
+    "icon": "images/logo.png",
+    "engines": {
+        "vscode": "^1.96.4"
+    },
+    "categories": [
+        "Programming Languages",
+        "Themes"
+    ],
+    "keywords": ["icons", "theme", "customization", "htmlua"],
+    "contributes": {
+        "languages": [
+            {
+                "id": "htmlua",
+                "aliases": [
+                    "Htmlua",
+                    "htmlua"
+                ],
+                "extensions": [
+                    ".htmlua"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "htmlua",
+                "scopeName": "source.htmlua",
+                "path": "./syntaxes/htmlua.tmLanguage.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "htmlua-icons",
+                "label": "Htmlua icons",
+                "path": "./fileIcons.json"
+            }
+        ]
+    },
+    "main": "./src/extension.js"
 }
