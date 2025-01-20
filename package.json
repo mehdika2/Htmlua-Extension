@@ -3,7 +3,8 @@
     "displayName": "Htmlua Extension",
     "description": "Syntax highlighting support for Htmlua files",
     "version": "1.0.0",
-    "publisher": "Mahdi khalilzadeh",
+    "author": "Mahdi Khalilzadeh",
+    "publisher": "mahdikhalilzadeh",
     "license": "MIT",
     "repository": {
         "type": "git",
