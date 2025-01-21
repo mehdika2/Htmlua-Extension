@@ -16,8 +16,7 @@ function complete(document, position) {
             var objectName = linePrefix.substr(0, linePrefix.length - 1);
             const index = objectName.indexOf("$");
             console.log(index, objectName.length);
-            if(index > 0 && 
-                index <= objectName.length)
+            if(index > 0 && index <= objectName.length)
                 objectName = objectName.substr(objectName.indexOf("$") + 1);
 
             var object = globalObjects.find(i => i.name === objectName);
@@ -34,9 +33,8 @@ function complete(document, position) {
             console.warn(error);
         }
     }
-    else if (linePrefix.includes(".")) {
+    else if (linePrefix.includes("."))
         return [];
-    }
 
     globalObjects.forEach(globalObject => {
         const globalObjectCompletion = new vscode.CompletionItem(globalObject.name, vscode.CompletionItemKind.Variable);
